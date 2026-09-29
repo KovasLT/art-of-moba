@@ -627,7 +627,7 @@ footer .sig{
       <!-- Add a new <li> for every contributor -->
       <li><a href="https://www.tiktok.com/@vdx.kovas" target="_blank" rel="noopener">Kovas</a></li>
     </ul>
-    <p class="kicker" style="margin-top:10px;">~3h read</p>
+    <p class="kicker" style="margin-top:10px;">~3h read | v1.01</p>
   </div>
 </header>
 
@@ -715,6 +715,7 @@ footer .sig{
           <ol>
             <li><a href="#what-heatmaps-show">What the Heatmaps Show</a></li>
             <li><a href="#reading-counter">Reading the Counter Heatmap</a></li>
+            <li><a href="#counter-by-role">Counter heatmaps by role</a></li>
             <li><a href="#reading-synergy">Reading the Synergy Heatmap</a></li>
             <li><a href="#data-limits">The Limits of the Data</a></li>
             <li><a href="#using-the-data">Using the Data in Your Drafts</a></li>
@@ -2729,7 +2730,7 @@ footer .sig{
 
         <figure class="figure">
           <img src="img/hok_synergy_heatmap.png" alt="Heatmap of winrates for hero pairings in Honor of Kings professional matches in the first half of 2026. Each cell shows how often two heroes won when they were played on the same team.">
-          <figcaption><strong>Figure 13 — Synergy heatmap.</strong> The same structure, applied to teammates rather than opponents. Both axes are your own heroes, and the cell where they meet is the winrate when both are on the same team. High-synergy pairings win more often than their individual strength would predict — usually because their kits do something together that neither does alone.</figcaption>
+          <figcaption><strong>Figure 17 — Synergy heatmap.</strong> The same structure, applied to teammates rather than opponents. Both axes are your own heroes, and the cell where they meet is the winrate when both are on the same team. High-synergy pairings win more often than their individual strength would predict — usually because their kits do something together that neither does alone.</figcaption>
         </figure>
 
         <p>Both heatmaps are read the same way. Every cell is a winrate. A cell at 50% means the matchup — or the pairing — is even. A cell above 50% means the row hero has the edge; a cell below 50% means the column hero does. The further the cell sits from 50%, the stronger the effect.</p>
@@ -2756,6 +2757,39 @@ footer .sig{
         </div>
 
         <p>The most important thing the counter heatmap gives you is not a list of picks. It is a <strong>correction</strong>. Every team carries a set of assumptions about which heroes beat which, and most of those assumptions come from a single bad game, an old patch, or a streamer's opinion. The heatmap replaces those assumptions with a number — and the number is often not what people expect.</p>
+      </div>
+
+      <!-- ===== ROLE-SPECIFIC COUNTER HEATMAPS ===== -->
+      <div class="sub" id="counter-by-role">
+        <h3>Counter heatmaps by role</h3>
+
+        <p>Figure 12 shows every matchup on the map at once. That is useful when you are drafting a whole composition, but it is too broad to answer the question you actually ask in the last two picks: <em>which hero, in my role, beats the hero they have already locked in?</em></p>
+
+        <p>The four heatmaps below are the same data, split by role. Each one shows only the heroes that can plausibly be picked into that position, on both axes. The reading rules are identical — every cell is a winrate, every cell near 50% is a coin flip, the diagonal is a mirror matchup — but the sample is narrower, so pay closer attention to sample size and patch date than you would with the full map.</p>
+
+        <figure class="figure">
+          <img src="img/jungle_counter_heatmap.png" alt="Counter heatmap for the jungle role, showing head-to-head winrates between junglers in professional matches.">
+          <figcaption><strong>Figure 13 — Jungle counter heatmap.</strong> Which junglers beat which. The jungle matchup decides the opening: who can invade safely, who gets priority laners, who reaches level 4 first, and who owns the objective clock. A jungler who is countered does not just lose the 1v1 — they lose the tempo that every other role depends on.</figcaption>
+        </figure>
+
+        <figure class="figure">
+          <img src="img/mid_lane_counter_heatmap.png" alt="Counter heatmap for the mid lane, showing head-to-head winrates between mid laners in professional matches.">
+          <figcaption><strong>Figure 14 — Mid lane counter heatmap.</strong> Which mid laners beat which. The mid matchup decides the push, and the push decides who moves first. A mage who is countered cannot clear faster, cannot rotate first, and cannot reach the objective fight before the enemy does — which is why the mid counter is often the quiet reason a team loses the first dragon.</figcaption>
+        </figure>
+
+        <figure class="figure">
+          <img src="img/clash_lane_counter_heatmap.png" alt="Counter heatmap for the clash lane, showing head-to-head winrates between clash laners in professional matches.">
+          <figcaption><strong>Figure 15 — Clash lane counter heatmap.</strong> Which clash laners beat which. This is the lane where the matchup matters most, because the 1v1 is long, isolated, and unforgiving. A countered clash laner cannot split-push, cannot rotate safely, and cannot pressure the side lane — which collapses the team's ability to divide the enemy across two lanes.</figcaption>
+        </figure>
+
+        <figure class="figure">
+          <img src="img/farm_lane_counter_heatmap.png" alt="Counter heatmap for the farm lane, showing head-to-head winrates between marksmen in professional matches.">
+          <figcaption><strong>Figure 16 — Farm lane counter heatmap.</strong> Which marksmen beat which. The farm lane matchup decides the 1000 GPM clock — a countered marksman loses the trade, gives up the wave, and reaches their power spike minutes later than they needed to. In a meta where the marksman is often the team's win condition, that delay is often the whole game.</figcaption>
+        </figure>
+
+        <div class="callout">
+          <p><strong>Same rules, smaller sample.</strong> The role-specific heatmaps are more focused and therefore more useful for a specific pick — but they are also built from fewer games, because only a fraction of professional matches feature any two given heroes in the same role. Check the sample before you trust a cell, and prefer patterns that hold across multiple cells in the same row over a single high number.</p>
+        </div>
       </div>
 
       <!-- ===== READING THE SYNERGY HEATMAP ===== -->
